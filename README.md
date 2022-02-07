@@ -69,3 +69,7 @@ http://<ip_address>:9092/proj1/
 
   ```
 5. Refer to the [API document](https://docs.google.com/document/d/1YhkWb0Zs0tW5r4JXX3E806JOytEsdPrSEtpB2iICXNg/edit?usp=sharing) on how to use all APIs
+6. Links to sample CSV files:
+* [user_data](https://drive.google.com/file/d/198MT2cCjwFkkanQTtpL_bog-1VaBk4XX/view?usp=sharing)
+* [content_data](https://drive.google.com/file/d/1YtGvpvz5iwZoICvUsvOgk6QaQCnaFBzN/view?usp=sharing)
+* [interaction_data](https://drive.google.com/file/d/1BSSFADDq5Luzv1hd0dxMWD7r0eub3kXL/view?usp=sharing)
