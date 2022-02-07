@@ -36,7 +36,7 @@ docker-compose up -d
 ```
 
 ## Usage
-IMPORTANT: When docker runs the application, it does not have any databases and tables. I have automated creation of databases and tables, and data ingestion using Postman form-data. Steps to follow:
+IMPORTANT: When docker runs the application, it does not have any databases and tables. I have automated creation of databases and tables, and the data ingestion using Postman form-data. Steps to follow:
 1. Open Postman
 3. Type your URL
 ```
