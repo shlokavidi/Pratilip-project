@@ -1,6 +1,0 @@
-Django==1.11.5
-mysqlclient==2.0.1
-django-mysql==2.2.0
-mysql.connector
-pandas
-
