@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+  db_user_service:
+    image: mysql:5.7
+    container_name: user_mysql
+    ports:
+      - 3307:3306
+    environment:
+       MYSQL_ALLOW_EMPTY_PASSWORD:
+       MYSQL_DATABASE: "user_db"
+       MYSQL_USER: "user1"
+       MYSQL_PASSWORD: "user1"
+       MYSQL_ROOT_PASSWORD: "root"
+
+    networks:
+      - network-tier
+        #healthcheck:
+            #test: "mysqladmin ping -h localhost"
+  proj1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    environment:
+      proj1: development
+    image: pratilipi
+    container_name: pratilipi
+
+    # add variables from the docker-compose environment to the container:
+    environment:
+      - XUSER=root
+      # or even shorter:
+      - XHOME
+    # use variable from the docker-compose environment in the config:
+    user: "${XUSER}"
+    #command: python3 manage.py runserver 172.31.47.188:9090
+    ports:
+      - "9092:9090"
+    depends_on:
+      - db_user_service
+    networks:
+      - network-tier
+    command: python3 manage.py runserver 0.0.0.0:9090
+networks:
+    network-tier:
+       driver: bridge
+
