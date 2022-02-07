@@ -1,5 +1,5 @@
 '''
-Establish connections to MySQL and Snowflake
+Establish connections to MySQL 
 '''
 import mysql.connector
 import pandas as pd
