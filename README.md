@@ -1,5 +1,5 @@
 # Pratilipi-project
-Dockerized Django app (backend) for user, content and interaction CRUD and other APIs 
+Dockerized Django app (backend) for user, content and interaction CRUD operations and other APIs 
 
 
 ## Built With
