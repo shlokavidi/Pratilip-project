@@ -19,14 +19,14 @@ You can get this project running by following these steps
 ## Installation and running
 1. Clone the repo
 ```
-git clone https://github.com/shlokavidi/Pratilipi-project
+git clone https://github.com/shlokavidi/Pratilipi-project.git
 ```
 2. Start Dockers
-4. Go to `docker_django_pratilipi` and build docker-compose
+4. Go to `docker_django_pratilipi` folder and build docker-compose using the following command
 ```
 docker-compose build
 ```
-5. Run docker-compose
+5. Run docker-compose using the following command
 ```
 docker-compose up
 ```
@@ -36,7 +36,7 @@ docker-compose up -d
 ```
 
 ## Usage
-IMPORTANT: When docker runs the application, it does not have any databases and tables. I have automated creation of databases and tables, and the data ingestion using Postman form-data. Steps to follow:
+IMPORTANT: When docker runs the application for the first time (each time after building it), it does not have any databases or tables. I have automated creation of databases and tables, and the data ingestion process using Postman form-data. Steps to follow:
 1. Open Postman
 3. Type your URL
 ```
